@@ -9,6 +9,6 @@ CREATE TABLE dbo.Task
 	IsCompleted bit default 0 not null,
 	CreatedDate datetime2(7) not null default getdate(),
 	UpdatedDate datetime2(7) not null default getdate(),
-	CompletedDate datetime2(7) not null,
+	CompletedDate datetime2(7) not null default getdate(),
 	DueDate datetime2(7) not null
 );
